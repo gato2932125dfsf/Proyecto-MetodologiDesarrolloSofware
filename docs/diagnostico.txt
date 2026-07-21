@@ -1,0 +1,151 @@
+================================================================================
+                       DIAGNÓSTICO DEL PROYECTO
+================================================================================
+> Análisis de la organización, identificación de la problemática y definición
+  del alcance funcional de GasControl System.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+  * Proyecto     : GasControl System
+  * Tipo         : Sistema Web
+  * Metodología  : Scrum
+  * Empresa      : GasControl Perú S.A.C.
+  * Ubicación    : Huancayo, Junín - Perú
+  * Estado       : En desarrollo
+
+--------------------------------------------------------------------------------
+[2] DESCRIPCIÓN DE LA ORGANIZACIÓN
+--------------------------------------------------------------------------------
+  GasControl Perú S.A.C. es una empresa dedicada a la comercialización y
+  distribución de balones de gas doméstico en la ciudad de Huancayo. Sus
+  principales clientes son hogares, restaurantes, comercios y pequeños
+  negocios que requieren abastecimiento constante de gas.
+
+  Actualmente la empresa administra gran parte de sus operaciones mediante
+  procesos manuales, utilizando registros físicos, hojas de cálculo y llamadas
+  telefónicas para coordinar pedidos y entregas.
+
+  El crecimiento de la empresa ha incrementado la cantidad de clientes y
+  operaciones diarias, haciendo evidente la necesidad de automatizar sus
+  procesos administrativos y operativos.
+
+  • MISIÓN:
+    Brindar un servicio rápido, seguro y eficiente de distribución de gas
+    doméstico, garantizando una atención de calidad y la satisfacción de
+    nuestros clientes.
+
+  • VISIÓN:
+    Ser una empresa líder en la distribución de gas doméstico a nivel
+    regional, destacando por su innovación tecnológica, eficiencia operativa
+    y calidad de servicio.
+
+--------------------------------------------------------------------------------
+[3] PROCESOS PRINCIPALES DEL NEGOCIO
+--------------------------------------------------------------------------------
+  (A) ABASTECIMIENTO
+      Recepción de balones de gas provenientes de proveedores autorizados y
+      registro del ingreso al almacén.
+
+  (B) GESTIÓN DE INVENTARIO
+      Control del stock disponible mediante el registro de entradas y
+      salidas de balones.
+
+  (C) GESTIÓN DE PEDIDOS
+      Recepción de pedidos realizados por los clientes y registro de la
+      información necesaria para la entrega.
+
+  (D) DISTRIBUCIÓN
+      Asignación de pedidos a repartidores y seguimiento del proceso de entrega.
+
+  (E) VENTAS
+      Registro de las ventas realizadas y actualización del historial comercial.
+
+  (F) REPORTES
+      Generación de información para apoyar la toma de decisiones
+      administrativas.
+
+--------------------------------------------------------------------------------
+[4] SITUACIÓN ACTUAL Y PROBLEMÁTICA
+--------------------------------------------------------------------------------
+  • DIFICULTADES ACTUALES:
+    [-] Registro manual de pedidos.
+    [-] Información distribuida en diferentes medios.
+    [-] Control deficiente del inventario.
+    [-] Escaso seguimiento de los repartidores.
+    [-] Retrasos en las entregas.
+    [-] Elaboración manual de reportes.
+    [-] Baja disponibilidad de información para la toma de decisiones.
+
+  • PROBLEMA IDENTIFICADO:
+    La empresa no dispone de un sistema que permita administrar de manera
+    centralizada sus operaciones.
+
+  • CONSECUENCIAS:
+    - Pérdida de información.
+    - Duplicidad de registros.
+    - Errores administrativos.
+    - Retrasos en la distribución.
+    - Dificultades para controlar el inventario.
+    - Reportes poco confiables.
+
+--------------------------------------------------------------------------------
+[5] SOLUCIÓN PROPUESTA Y ALCANCE
+--------------------------------------------------------------------------------
+  Se propone el desarrollo de GasControl System, un sistema web que permitirá
+  automatizar la gestión de los principales procesos de la empresa.
+
+  • MÓDULOS DEL SISTEMA:
+    [+] Gestión de usuarios
+    [+] Gestión de clientes
+    [+] Gestión de pedidos
+    [+] Inventario
+    [+] Distribución
+    [+] Reportes
+    [+] Autenticación y seguridad
+
+  • ALCANCE FUNCIONAL:
+    - Autenticación mediante usuarios y roles.
+    - Administración de clientes.
+    - Registro y seguimiento de pedidos.
+    - Control de inventario.
+    - Gestión de repartidores.
+    - Reportes administrativos.
+    - Panel de administración.
+
+    Nota: El proyecto se desarrolla bajo la metodología Scrum, permitiendo
+    entregar funcionalidades de forma incremental durante cada Sprint.
+
+--------------------------------------------------------------------------------
+[6] OBJETIVOS
+--------------------------------------------------------------------------------
+  • OBJETIVO GENERAL:
+    Desarrollar un sistema web que optimice la gestión de pedidos, inventario
+    y distribución de GasControl Perú S.A.C.
+
+  • OBJETIVOS ESPECÍFICOS:
+    1. Automatizar el registro de pedidos.
+    2. Mejorar el control del inventario.
+    3. Facilitar el seguimiento de las entregas.
+    4. Centralizar la información de clientes.
+    5. Generar reportes para apoyar la toma de decisiones.
+    6. Reducir errores administrativos.
+
+--------------------------------------------------------------------------------
+[7] ARQUITECTURA / TECNOLOGÍAS PROPUESTAS
+--------------------------------------------------------------------------------
+  • FRONTEND            : React | TailwindCSS
+  • BACKEND             : Supabase
+  • BASE DE DATOS       : PostgreSQL
+  • CONTROL DE VERSIONES : Git | GitHub
+  • DISEÑO UI           : Figma
+
+--------------------------------------------------------------------------------
+[8] RESULTADO ESPERADO
+--------------------------------------------------------------------------------
+  Al finalizar el proyecto se espera contar con una plataforma web que permita
+  gestionar de forma eficiente los procesos operativos de GasControl Perú
+  S.A.C., reduciendo tiempos de atención, mejorando el control del inventario y
+  proporcionando información confiable para la administración del negocio.
+
+================================================================================

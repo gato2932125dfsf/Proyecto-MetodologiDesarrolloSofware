@@ -1,0 +1,191 @@
+================================================================================
+                         ARQUITECTURA DEL SISTEMA
+================================================================================
+> Descripción de la arquitectura de GasControl System, los componentes
+  principales del sistema y la interacción entre ellos.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL Y VISIÓN OVERVIEW
+--------------------------------------------------------------------------------
+  * Proyecto      : GasControl System
+  * Arquitectura  : Cliente - Servidor
+  * Tipo          : Aplicación Web
+  * Metodología   : Scrum
+  * Base de Datos : PostgreSQL (Supabase)
+
+  • VISIÓN GENERAL:
+    GasControl System se desarrollará bajo una arquitectura Cliente - Servidor,
+    donde los usuarios accederán mediante un navegador web mientras que la
+    lógica de negocio, autenticación y almacenamiento de información serán
+    gestionados por Supabase.
+
+    La arquitectura busca mantener una separación clara entre la interfaz de
+    usuario, la lógica del sistema y la persistencia de datos, facilitando el
+    mantenimiento y la escalabilidad del proyecto.
+
+--------------------------------------------------------------------------------
+[2] ARQUITECTURA GENERAL (DIAGRAMA)
+--------------------------------------------------------------------------------
+
+                           [ Usuario ]
+                                │
+                                ▼
+                      Navegador Web (React)
+                                │
+                                ▼
+                    +-----------------------+
+                    |       FRONTEND        |
+                    |  React + Tailwind CSS |
+                    +-----------------------+
+                                │
+                        API / Supabase SDK
+                                │
+                                ▼
+                    +-----------------------+
+                    |       SUPABASE        |
+                    | • Auth                |
+                    | • Base de Datos       |
+                    | • Storage             |
+                    | • Row Level Security  |
+                    +-----------------------+
+                                │
+                                ▼
+                       PostgreSQL Database
+
+--------------------------------------------------------------------------------
+[3] COMPONENTES DEL SISTEMA
+--------------------------------------------------------------------------------
+  (A) FRONTEND (Capa de Presentación)
+      - Responsabilidades:
+        * Mostrar la interfaz al usuario.
+        * Validar formularios.
+        * Consumir los servicios de Supabase.
+        * Gestionar la navegación entre módulos.
+      - Tecnologías: React | Tailwind CSS | JavaScript
+
+  (B) BACKEND (Supabase)
+      - Responsabilidades:
+        * Autenticación de usuarios y gestión de sesiones.
+        * Acceso a la base de datos y almacenamiento de información.
+        * Seguridad mediante políticas Row Level Security (RLS).
+      - Servicios utilizados: Supabase Auth | PostgreSQL | Storage | API REST
+
+  (C) BASE DE DATOS
+      - Administrada en PostgreSQL por Supabase.
+      - Entidades principales: Usuarios, Clientes, Pedidos, Inventario,
+        Repartidores, Ventas, Reportes.
+
+--------------------------------------------------------------------------------
+[4] MÓDULOS DEL SISTEMA
+--------------------------------------------------------------------------------
+  [+] AUTENTICACIÓN
+      Inicio de sesión, recuperación de contraseña, gestión de roles y
+      seguridad de acceso.
+
+  [+] GESTIÓN DE CLIENTES
+      Registrar clientes, actualizar información, eliminar registros y
+      consultar historial.
+
+  [+] GESTIÓN DE PEDIDOS
+      Registrar pedidos, asignar repartidores, actualizar estados y consultar
+      pedidos.
+
+  [+] INVENTARIO
+      Registro de entradas, salidas, stock disponible y alertas de stock mínimo.
+
+  [+] DISTRIBUCIÓN
+      Visualización de pedidos asignados, confirmación de entrega y estado del
+      reparto.
+
+  [+] REPORTES
+      Generación de reportes para ventas, inventario, clientes y repartidores.
+
+--------------------------------------------------------------------------------
+[5] ROLES DEL SISTEMA
+--------------------------------------------------------------------------------
+  • ADMINISTRADOR (Acceso completo)
+    - Administrar usuarios y clientes.
+    - Gestionar pedidos e inventario.
+    - Generar reportes generales.
+
+  • REPARTIDOR (Acceso operativo)
+    - Consultar pedidos asignados.
+    - Confirmar entregas y actualizar estados.
+
+  • CLIENTE (Acceso de consulta)
+    - Registrar pedidos.
+    - Consultar el estado de sus compras.
+
+--------------------------------------------------------------------------------
+[6] FLUJO GENERAL DE TRABAJO
+--------------------------------------------------------------------------------
+
+  [ Cliente ] ----> ( Registrar Pedido )
+                            │
+                            ▼
+  [ Administrador ] -> ( Asignar Repartidor )
+                            │
+                            ▼
+  [ Repartidor ] ----> ( Entregar Pedido )
+                            │
+                            ▼
+  [ Inventario ] ----> ( Actualizar Stock )
+                            │
+                            ▼
+  [ Reportes ]   ----> ( Actualizar Métricas )
+
+--------------------------------------------------------------------------------
+[7] SEGURIDAD Y TECNOLOGÍAS
+--------------------------------------------------------------------------------
+  • MEDIDAS DE SEGURIDAD:
+    - Autenticación mediante usuario y contraseña.
+    - Control de acceso basado en roles.
+    - Políticas Row Level Security (RLS).
+    - Protección de credenciales y validación de sesiones.
+
+  • TECNOLOGÍAS UTILIZADAS:
+    * Frontend            : React | Tailwind CSS | JavaScript
+    * Backend & Database  : Supabase (BaaS) | PostgreSQL
+    * Herramientas        : Git | GitHub | Figma
+
+--------------------------------------------------------------------------------
+[8] ORGANIZACIÓN DEL PROYECTO
+--------------------------------------------------------------------------------
+  GasControl System
+  │
+  ├── FRONTEND
+  │   ├── Login
+  │   ├── Clientes
+  │   ├── Pedidos
+  │   ├── Inventario
+  │   ├── Distribución
+  │   └── Reportes
+  │
+  ├── BACKEND
+  │   ├── Auth
+  │   ├── Base de Datos
+  │   ├── Storage
+  │   └── API
+  │
+  └── DATABASE
+      ├── Usuarios
+      ├── Clientes
+      ├── Pedidos
+      ├── Inventario
+      ├── Repartidores
+      └── Ventas
+
+--------------------------------------------------------------------------------
+[9] PRINCIPIOS ARQUITECTÓNICOS Y RESULTADO ESPERADO
+--------------------------------------------------------------------------------
+  • PRINCIPIOS:
+    - Separación estricta entre presentación y datos.
+    - Modularidad, escalabilidad y reutilización de componentes.
+    - Seguridad integrada basada en roles y servicios Supabase.
+
+  • RESULTADO ESPERADO:
+    Desarrollar un sistema modular, mantenible y escalable que optimice la
+    administración operativa de GasControl Perú S.A.C. utilizando
+    tecnologías modernas en la nube.
+
+================================================================================

@@ -1,0 +1,193 @@
+================================================================================
+                           CASOS DE PRUEBA
+================================================================================
+> Casos de prueba funcionales definidos para verificar el correcto
+  funcionamiento de GasControl System durante el desarrollo de cada Sprint.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+  * Proyecto     : GasControl System
+  * Documento    : Casos de Prueba
+  * Metodología  : Scrum
+  * Estrategia   : Pruebas Funcionales Manuales
+  * Responsable  : Development Team / QA
+
+--------------------------------------------------------------------------------
+[2] OBJETIVO Y ESTRATEGIA DE PRUEBAS
+--------------------------------------------------------------------------------
+  • OBJETIVO:
+    Validar que cada requisito funcional implementado cumpla el comportamiento
+    esperado antes de ser aprobado durante el Sprint Review.
+
+    Las pruebas forman parte del Plan de Aseguramiento de Calidad (SQA) y siguen
+    el enfoque Shift Left, permitiendo detectar errores desde las primeras etapas
+    del desarrollo.
+
+  • CRITERIO CLAVE:
+    No se cerrará un Sprint mientras existan errores críticos pendientes.
+
+--------------------------------------------------------------------------------
+[3] FLUJO DE EJECUCIÓN
+--------------------------------------------------------------------------------
+
+   [ Implementación ]
+           │
+           ▼
+  [ Revisión de Código ]
+           │
+           ▼
+   [ Prueba Funcional ]
+           │
+           ▼
+  [ Corrección de Errores ]
+           │
+           ▼
+   [ Nueva Validación ]
+           │
+           ▼
+    [ Sprint Review ]
+
+--------------------------------------------------------------------------------
+[4] CASOS DE PRUEBA DETALLADOS
+--------------------------------------------------------------------------------
+
+  --- MÓDULO: AUTENTICACIÓN ---
+  
+  [CP-01] Inicio de Sesión Correcto
+    * Requisito   : RF-01 | Prioridad: Alta | Tipo: Funcional
+    * Precondición: El usuario posee una cuenta registrada.
+    * Pasos       : 1. Ingresar usuario.
+                    2. Ingresar contraseña válida.
+                    3. Presionar "Iniciar Sesión".
+    * Resultado E.: Acceso exitoso al sistema y redirección al panel principal.
+
+  [CP-02] Credenciales Incorrectas
+    * Requisito   : RF-01 | Prioridad: Alta
+    * Pasos       : 1. Ingresar usuario.
+                    2. Ingresar contraseña incorrecta.
+    * Resultado E.: Mostrar mensaje de error y denegar el acceso.
+
+
+  --- MÓDULO: CLIENTES ---
+
+  [CP-03] Registrar Cliente
+    * Requisito   : RF-05 | Prioridad: Alta
+    * Pasos       : 1. Acceder al módulo Clientes.
+                    2. Completar el formulario.
+                    3. Guardar.
+    * Resultado E.: El cliente queda registrado correctamente en la Base de Datos.
+
+  [CP-04] Editar Cliente
+    * Requisito   : RF-06
+    * Resultado E.: Los datos modificados se almacenan correctamente.
+
+  [CP-05] Eliminar Cliente
+    * Requisito   : RF-07
+    * Resultado E.: El registro desaparece del listado de clientes.
+
+
+  --- MÓDULO: PEDIDOS ---
+
+  [CP-06] Registrar Pedido
+    * Requisito   : RF-10
+    * Resultado E.: El pedido queda registrado correctamente.
+
+  [CP-07] Asignar Repartidor
+    * Requisito   : RF-11
+    * Resultado E.: El pedido cambia al estado "Asignado".
+
+  [CP-08] Actualizar Estado del Pedido
+    * Requisito   : RF-12
+    * Resultado E.: El estado del pedido cambia correctamente.
+
+  [CP-09] Cancelar Pedido
+    * Requisito   : RF-13
+    * Resultado E.: Se registra la cancelación y aplican reglas correspondientes.
+
+
+  --- MÓDULO: INVENTARIO ---
+
+  [CP-10] Registrar Ingreso de Balones
+    * Requisito   : RF-15
+    * Resultado E.: El stock aumenta correctamente.
+
+  [CP-11] Registrar Salida de Inventario
+    * Requisito   : RF-16
+    * Resultado E.: El stock disminuye correctamente.
+
+  [CP-12] Validar Stock Mínimo
+    * Requisito   : RF-18
+    * Resultado E.: Alerta automática al alcanzar el límite mínimo de stock.
+
+
+  --- MÓDULO: DISTRIBUCIÓN ---
+
+  [CP-13] Consultar Pedidos Asignados
+    * Requisito   : RF-19
+    * Resultado E.: El repartidor visualiza únicamente sus pedidos.
+
+  [CP-14] Confirmar Entrega
+    * Requisito   : RF-20
+    * Resultado E.: El pedido cambia al estado "Entregado".
+
+
+  --- MÓDULO: REPORTES ---
+
+  [CP-15] Generar Reporte de Ventas
+    * Requisito   : RF-22
+    * Resultado E.: Se genera correctamente el reporte solicitado.
+
+  [CP-16] Generar Reporte de Inventario
+    * Requisito   : RF-23
+    * Resultado E.: El sistema muestra la información actualizada del inventario.
+
+--------------------------------------------------------------------------------
+[5] MATRIZ Y REGISTRO DE RESULTADOS
+--------------------------------------------------------------------------------
+   CASO   | ESTADO               | OBSERVACIONES
+  --------+----------------------+----------------------------------------------
+   CP-01  | [ ] Aprobado  [ ] Fallido | 
+   CP-02  | [ ] Aprobado  [ ] Fallido | 
+   CP-03  | [ ] Aprobado  [ ] Fallido | 
+   CP-04  | [ ] Aprobado  [ ] Fallido | 
+   CP-05  | [ ] Aprobado  [ ] Fallido | 
+   CP-06  | [ ] Aprobado  [ ] Fallido | 
+   CP-07  | [ ] Aprobado  [ ] Fallido | 
+   CP-08  | [ ] Aprobado  [ ] Fallido | 
+   CP-09  | [ ] Aprobado  [ ] Fallido | 
+   CP-10  | [ ] Aprobado  [ ] Fallido | 
+   CP-11  | [ ] Aprobado  [ ] Fallido | 
+   CP-12  | [ ] Aprobado  [ ] Fallido | 
+   CP-13  | [ ] Aprobado  [ ] Fallido | 
+   CP-14  | [ ] Aprobado  [ ] Fallido | 
+   CP-15  | [ ] Aprobado  [ ] Fallido | 
+   CP-16  | [ ] Aprobado  [ ] Fallido | 
+
+--------------------------------------------------------------------------------
+[6] COBERTURA DE PRUEBAS
+--------------------------------------------------------------------------------
+  * Autenticación : 2 casos
+  * Clientes      : 3 casos
+  * Pedidos       : 4 casos
+  * Inventario    : 3 casos
+  * Distribución  : 2 casos
+  * Reportes      : 2 casos
+
+  TOTAL DE CASOS DE PRUEBA: 16
+
+--------------------------------------------------------------------------------
+[7] CRITERIOS DE APROBACIÓN Y FINALIZACIÓN
+--------------------------------------------------------------------------------
+  • CRITERIOS DE APROBACIÓN POR CASO:
+    - Comportamiento obtenido coincide con el esperado.
+    - Sin errores funcionales ni alteración de la seguridad.
+    - Datos guardados de forma íntegra y correcta.
+
+  • CRITERIOS DE FINALIZACIÓN DEL SPRINT:
+    1. Verificación completa de requisitos funcionales planificados.
+    2. Ejecución total de los casos de prueba correspondientes.
+    3. Cero (0) errores críticos pendientes.
+    4. Aprobación formal del incremento durante el Sprint Review.
+
+================================================================================

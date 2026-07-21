@@ -1,0 +1,111 @@
+================================================================================
+                               PRODUCT BACKLOG
+================================================================================
+> Lista priorizada de funcionalidades que serán desarrolladas durante el proyecto
+  GasControl System siguiendo la metodología Scrum.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL Y OBJETIVO
+--------------------------------------------------------------------------------
+  * Proyecto      : GasControl System
+  * Documento     : Product Backlog
+  * Metodología   : Scrum
+  * Product Owner : Equipo del Proyecto (Simulado)
+  * Estado        : Activo
+
+  • OBJETIVO:
+    Reunir todas las funcionalidades identificadas para el sistema, siendo la
+    principal fuente de trabajo para la planificación de cada Sprint. Cada
+    elemento representa una necesidad del negocio expresada como Historia
+    de Usuario (HU) y asociada a los Requisitos Funcionales (RF) de la ERS.
+
+--------------------------------------------------------------------------------
+[2] CRITERIOS DE PRIORIZACIÓN
+--------------------------------------------------------------------------------
+  Prioridades definidas considerando valor de negocio, dependencias y riesgos:
+
+  [ Alta ]  : Funcionalidad indispensable para la operación base.
+  [ Media ] : Funcionalidad importante para complementar la gestión.
+  [ Baja ]  : Funcionalidad secundaria o estética suplementaria.
+
+--------------------------------------------------------------------------------
+[3] TABLA DEL PRODUCT BACKLOG
+--------------------------------------------------------------------------------
+   ID   | PRIORIDAD | REQUISITOS    | HISTORIA DE USUARIO
+  ------+-----------+---------------+-------------------------------------------
+  PB-01 | Alta      | RF-01         | Como administrador quiero iniciar sesión
+        |           |               | para acceder al sistema de forma segura.
+  PB-02 | Alta      | RF-02..RF-04  | Como administrador quiero administrar 
+        |           |               | usuarios para controlar el acceso.
+  PB-03 | Alta      | RF-05..RF-09  | Como administrador quiero registrar 
+        |           |               | clientes para mantener datos al día.
+  PB-04 | Alta      | RF-10         | Como administrador quiero registrar 
+        |           |               | pedidos para controlar las ventas.
+  PB-05 | Alta      | RF-11         | Como administrador quiero asignar pedidos
+        |           |               | a repartidores para organizar entregas.
+  PB-06 | Alta      | RF-12         | Como repartidor quiero actualizar estado
+        |           |               | de pedidos para informar avances.
+  PB-07 | Media     | RF-13         | Como administrador quiero aplicar 
+        |           |               | penalidades cuando corresponda.
+  PB-08 | Media     | RF-14         | Como cliente quiero recibir información 
+        |           |               | sobre el estado de mi pedido.
+  PB-09 | Alta      | RF-15..RF-18  | Como administrador quiero controlar el 
+        |           |               | inventario de balones de gas.
+  PB-10 | Alta      | RF-19         | Como repartidor quiero ver únicamente 
+        |           |               | mis pedidos asignados.
+  PB-11 | Alta      | RF-20, RF-21  | Como repartidor quiero confirmar las 
+        |           |               | entregas realizadas.
+  PB-12 | Alta      | RF-22, RF-23  | Como administrador quiero generar reportes
+        |           |               | para apoyar la toma de decisiones.
+
+--------------------------------------------------------------------------------
+[4] ORGANIZACIÓN POR MÓDULOS
+--------------------------------------------------------------------------------
+  • SEGURIDAD     : Login, gestión de usuarios, roles, recuperación de clave.
+  • CLIENTES      : Registro, edición, eliminación, consulta e historial.
+  • PEDIDOS       : Registro, consulta, actualización, penalidades, seguimiento.
+  • INVENTARIO    : Entradas, salidas, control de stock y alertas.
+  • DISTRIBUCIÓN  : Asignación de repartidores, confirmación de entregas.
+  • REPORTES      : Ventas, inventario, clientes y distribución.
+
+--------------------------------------------------------------------------------
+[5] PLANIFICACIÓN INICIAL DE SPRINTS
+--------------------------------------------------------------------------------
+  * SPRINT 1 : Base del sistema y autenticación (PB-01, PB-02, PB-03)
+  * SPRINT 2 : Módulo de pedidos (PB-04, PB-05, PB-06)
+  * SPRINT 3 : Módulo de inventario (PB-07, PB-09)
+  * SPRINT 4 : Módulo de distribución (PB-08, PB-10, PB-11)
+  * SPRINT 5 : Módulo de reportes (PB-12)
+  * SPRINT 6 : Corrección de incidencias, optimización y validación final
+               (Pruebas finales, documentación y preparación de entrega)
+
+--------------------------------------------------------------------------------
+[6] ESTADO Y DEFINICIÓN DE TERMINADO (DoD)
+--------------------------------------------------------------------------------
+  • NOMENCLATURA DE ESTADO:
+    [X] Completado  : Historia implementada y validada.
+    [/] En proceso  : Historia asignada al Sprint actual.
+    [ ] Pendiente   : Historia aún no iniciada.
+
+  • DEFINICIÓN DE TERMINADO (Definition of Done):
+    Una Historia de Usuario está COMPLETADA cuando:
+    1. Cumple el requisito funcional asociado.
+    2. El código ha sido revisado entre pares.
+    3. Las pruebas funcionales han sido ejecutadas y aprobadas.
+    4. Cero (0) errores críticos abiertos.
+    5. Ha sido aprobada formalmente durante el Sprint Review.
+
+--------------------------------------------------------------------------------
+[7] REFINAMIENTO Y RELACIÓN DOCUMENTAL
+--------------------------------------------------------------------------------
+  • REFINAMIENTO: Se realizará en cada Sprint Planning para repriorizar,
+    dividir historias complejas y ajustar estimaciones según el feedback.
+
+  • TRAZABILIDAD DOCUMENTAL:
+    * diagnostico.md   ---> Problemática del negocio.
+    * ers.md           ---> Especificación formal de Requisitos (RF/RNF).
+    * arquitectura.md  ---> Implementación técnica y de infraestructura.
+    * plan-calidad.md  ---> Estrategia SQA y criterios ISO/IEC 25010.
+    * casos-prueba.md  ---> Verificación y validación de historias.
+
+================================================================================

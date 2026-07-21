@@ -1,0 +1,164 @@
+================================================================================
+            ESPECIFICACIÓN DE REQUISITOS DE SOFTWARE (ERS)
+================================================================================
+> Documento que define los requisitos funcionales y no funcionales del
+  sistema GasControl System.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+  * Proyecto         : GasControl System
+  * Tipo de Sistema  : Aplicación Web
+  * Metodología      : Scrum
+  * Versión          : 1.0
+  * Estado           : En desarrollo
+
+--------------------------------------------------------------------------------
+[2] PROPÓSITO Y ALCANCE
+--------------------------------------------------------------------------------
+  • PROPÓSITO:
+    El presente documento describe los requisitos funcionales y no funcionales
+    del sistema GasControl System, cuyo objetivo es automatizar la gestión de
+    clientes, pedidos, inventario, distribución y reportes de la empresa
+    GasControl Perú S.A.C.
+
+    Este documento servirá como base para el diseño, desarrollo y validación
+    del sistema durante los diferentes Sprints del proyecto.
+
+  • ALCANCE:
+    GasControl System permitirá administrar los procesos principales mediante
+    una plataforma web integrada compuesta por los siguientes módulos:
+    [-] Autenticación
+    [-] Gestión de Clientes
+    [-] Gestión de Pedidos
+    [-] Inventario
+    [-] Distribución
+    [-] Reportes
+
+--------------------------------------------------------------------------------
+[3] ACTORES DEL SISTEMA
+--------------------------------------------------------------------------------
+  (A) ADMINISTRADOR
+      Gestiona la información del sistema, usuarios, pedidos, inventario y
+      reportes.
+
+  (B) REPARTIDOR
+      Consulta pedidos asignados y registra la entrega de pedidos.
+
+  (C) CLIENTE
+      Realiza pedidos y consulta el estado de sus compras.
+
+--------------------------------------------------------------------------------
+[4] REQUISITOS FUNCIONALES
+--------------------------------------------------------------------------------
+  • RF-01: AUTENTICACIÓN Y SEGURIDAD
+    [RF-01] Inicio de sesión mediante usuario y contraseña.
+    [RF-02] Recuperación de contraseña mediante correo electrónico.
+    [RF-03] Bloqueo de usuario después de múltiples intentos fallidos.
+    [RF-04] Control de acceso según roles del sistema.
+
+  • RF-02: GESTIÓN DE CLIENTES
+    [RF-05] Registrar clientes.
+    [RF-06] Editar información de clientes.
+    [RF-07] Eliminar clientes.
+    [RF-08] Consultar historial de pedidos por cliente.
+    [RF-09] Buscar clientes por nombre, teléfono o dirección.
+
+  • RF-03: GESTIÓN DE PEDIDOS
+    [RF-10] Registrar pedidos.
+    [RF-11] Asignar repartidores manual o automáticamente.
+    [RF-12] Actualizar el estado del pedido.
+    [RF-13] Aplicar penalidades por cancelaciones tardías.
+    [RF-14] Notificar al cliente sobre el estado del pedido.
+
+    Estados del Pedido:
+    -> Pendiente
+    -> En ruta
+    -> Entregado
+    -> Cancelado
+
+  • RF-04: GESTIÓN DE INVENTARIO
+    [RF-15] Registrar entradas de balones de gas.
+    [RF-16] Registrar salidas de inventario.
+    [RF-17] Actualizar automáticamente el stock.
+    [RF-18] Generar alertas de stock mínimo.
+
+  • RF-05: DISTRIBUCIÓN
+    [RF-19] Visualizar pedidos asignados por repartidor.
+    [RF-20] Confirmar la entrega de pedidos.
+    [RF-21] Registrar entregas realizadas.
+
+  • RF-06: REPORTES
+    [RF-22] Generar reportes de ventas.
+    [RF-23] Generar reportes de inventario.
+    [RF-24] Generar reportes de desempeño de repartidores.
+    [RF-25] Exportar reportes en PDF y Excel.
+
+--------------------------------------------------------------------------------
+[5] REQUISITOS NO FUNCIONALES
+--------------------------------------------------------------------------------
+  [+] RENDIMIENTO
+      - Respuesta fluida durante la operación normal.
+      - Tiempos de generación de reportes adecuados para el usuario.
+
+  [+] SEGURIDAD
+      - Autenticación mediante usuario y contraseña.
+      - Acceso restringido según roles.
+      - Protección de información mediante Supabase Auth.
+      - Políticas de seguridad a nivel de filas (Row Level Security).
+
+  [+] USABILIDAD
+      - Interfaces intuitivas y navegación sencilla.
+      - Diseño responsive para escritorio y dispositivos móviles.
+
+  [+] DISPONIBILIDAD
+      - Operatividad condicionada a la disponibilidad de servicios Supabase.
+
+  [+] COMPATIBILIDAD
+      - Funcionamiento correcto en Google Chrome y Microsoft Edge.
+
+  [+] MANTENIBILIDAD
+      - Código organizado y modular para futuras mejoras.
+
+--------------------------------------------------------------------------------
+[6] RESTRICCIONES Y CRITERIOS DE ACEPTACIÓN
+--------------------------------------------------------------------------------
+  • RESTRICCIONES:
+    - Uso exclusivo de herramientas gratuitas.
+    - Base de datos PostgreSQL mediante Supabase.
+    - Control de versiones con GitHub.
+    - Desarrollo basado en metodología Scrum.
+    - Proyecto desarrollado con fines académicos.
+
+  • CRITERIOS DE ACEPTACIÓN POR SPRINT:
+    Un Sprint se considerará terminado cuando:
+    1. Se hayan implementado todos los requisitos planificados.
+    2. Los casos de prueba correspondientes hayan sido aprobados.
+    3. No existan errores críticos.
+    4. El Product Owner apruebe el incremento durante el Sprint Review.
+
+--------------------------------------------------------------------------------
+[7] TRAZABILIDAD POR SPRINT
+--------------------------------------------------------------------------------
+  * Sprint 1 : Autenticación | Inventario
+  * Sprint 2 : Gestión de Pedidos
+  * Sprint 3 : Panel Administrativo
+  * Sprint 4 : Distribución
+  * Sprint 5 : Reportes
+  * Sprint 6 : Validación y Correcciones
+
+--------------------------------------------------------------------------------
+[8] TECNOLOGÍAS
+--------------------------------------------------------------------------------
+  • Frontend           : React | Tailwind CSS
+  • Backend & Database : Supabase | PostgreSQL
+  • Herramientas       : Git | GitHub | Figma
+
+--------------------------------------------------------------------------------
+[9] ESTADO DEL DOCUMENTO
+--------------------------------------------------------------------------------
+  * Versión : 1.0
+  * Fecha   : 2026
+  * Estado  : Aprobado para desarrollo
+
+================================================================================

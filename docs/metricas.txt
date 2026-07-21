@@ -1,0 +1,110 @@
+================================================================================
+                         MÉTRICAS DEL PROYECTO
+================================================================================
+> Definición de las métricas utilizadas para monitorear el avance del proyecto y
+  evaluar la calidad del software desarrollado en GasControl System.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL Y OBJETIVO
+--------------------------------------------------------------------------------
+  * Proyecto         : GasControl System
+  * Documento        : Métricas
+  * Metodología      : Scrum
+  * Modelo Control   : Earned Value Management (EVM)
+  * Norma Calidad    : ISO/IEC 25010
+
+  • OBJETIVO:
+    Establecer indicadores para medir el progreso del proyecto y la calidad del
+    software durante todo el ciclo de desarrollo, permitiendo controlar el
+    avance, detectar desviaciones, evaluar el sistema y apoyar la toma de
+    decisiones.
+
+--------------------------------------------------------------------------------
+[2] MÉTRICAS DE GESTIÓN DEL PROYECTO (EVM)
+--------------------------------------------------------------------------------
+  El seguimiento se realiza mediante Earned Value Management (EVM) utilizando
+  HORAS-HOMBRE como unidad de medida.
+
+  (A) SPI — Schedule Performance Index (Índice de Rendimiento del Cronograma)
+      * Fórmula   : SPI = EV / PV
+                    (EV: Horas realmente completadas | PV: Horas planificadas)
+      * Frecuencia: Al finalizar cada Sprint (Responsable: Scrum Master).
+      * Umbrales  : 
+        [-] SPI >= 1.00     : Cronograma cumplido o adelantado.
+        [-] 0.80 <= SPI < 1 : Ligero retraso.
+        [-] SPI < 0.80      : Requiere acciones correctivas inmediatas.
+
+  (B) CPI — Cost Performance Index (Índice de Rendimiento del Esfuerzo)
+      * Fórmula   : CPI = EV / AC
+                    (EV: Horas completadas | AC: Horas realmente utilizadas)
+      * Frecuencia: Al cierre de cada Sprint (Responsable: Scrum Master).
+      * Umbrales  : 
+        [-] CPI >= 1.00     : Uso eficiente del esfuerzo.
+        [-] 0.85 <= CPI < 1 : Rendimiento aceptable.
+        [-] CPI < 0.85      : Reestimar el esfuerzo restante.
+
+  (C) VELOCIDAD DEL EQUIPO
+      * Cantidad de Historias de Usuario completadas por Sprint.
+      * Medición por el Development Team. Una variación > 30% entre Sprints
+        consecutivos se analizará en la Retrospectiva.
+
+--------------------------------------------------------------------------------
+[3] MÉTRICAS DE CALIDAD DEL SOFTWARE (ISO/IEC 25010)
+--------------------------------------------------------------------------------
+  • Adecuación Funcional : 100% de requisitos funcionales implementados/validados.
+  • Rendimiento          : Tiempo de respuesta < 3 segundos en uso normal.
+  • Usabilidad           : Retroalimentación positiva en pruebas del Sprint 6.
+  • Fiabilidad           : Disponibilidad total durante demos y pruebas.
+  • Seguridad            : Supabase Auth, control por roles y políticas RLS.
+  • Compatibilidad       : Operación correcta en Google Chrome y Microsoft Edge.
+  • Mantenibilidad       : Reglas de negocio modificables sin alterar la
+                           estructura base.
+  • Portabilidad         : Documentación técnica disponible para la base de datos.
+
+--------------------------------------------------------------------------------
+[4] INDICADORES Y FRECUENCIA DE MEDICIÓN
+--------------------------------------------------------------------------------
+  METRICA / INDICADOR    | META / UMBRAL           | FRECUENCIA
+  -----------------------+-------------------------+----------------------------
+  SPI                    | SPI >= 1.00             | Cada Sprint
+  CPI                    | CPI >= 1.00             | Cada Sprint
+  Velocidad              | Variación <= 30%        | Cada Sprint
+  Tiempo de Respuesta    | < 3 segundos            | Durante pruebas
+  Errores Críticos       | 0                       | Continua
+  Cobertura de Pruebas   | 100% de requisitos      | Cada Sprint
+  Disponibilidad         | Operativo en Demos      | Sprint Review
+  Calidad ISO 25010      | Aprobado por PO         | Sprint Review
+
+--------------------------------------------------------------------------------
+[5] ROLES Y RESPONSABILIDADES
+--------------------------------------------------------------------------------
+  * Scrum Master     : Seguimiento del proyecto mediante SPI y CPI.
+  * Development Team : Registro de velocidad y revisión de avances.
+  * QA               : Ejecución de pruebas y medición de cobertura.
+  * Product Owner    : Validación del incremento entregado.
+
+--------------------------------------------------------------------------------
+[6] INTERPRETACIÓN DE RESULTADOS Y ACCIONES
+--------------------------------------------------------------------------------
+  Cuando un indicador se ubique por debajo del umbral establecido, el equipo:
+  1. Analizará la causa raíz del problema.
+  2. Definirá acciones correctivas de aplicación inmediata.
+  3. Ajustará la planificación del siguiente Sprint.
+  4. Registrará los compromisos en la Sprint Retrospective.
+
+--------------------------------------------------------------------------------
+[7] RELACIÓN DOCUMENTAL Y RESULTADO ESPERADO
+--------------------------------------------------------------------------------
+  • RELACIÓN DOCUMENTAL:
+    * diagnostico.md    ---> Contexto y problemática de origen.
+    * ers.md            ---> Requisitos a medir y validar.
+    * backlog.md        ---> Trabajo monitoreado por las métricas.
+    * plan-calidad.md   ---> Políticas e indicadores base.
+    * casos-prueba.md   ---> Evidencia de cobertura y calidad.
+
+  • RESULTADO ESPERADO:
+    Evaluar objetivamente el avance del proyecto y la calidad del software
+    durante cada Sprint, facilitando la toma de decisiones y promoviendo la
+    mejora continua del equipo de desarrollo.
+
+================================================================================

@@ -1,0 +1,162 @@
+================================================================================
+                    PLAN DE CALIDAD DEL SOFTWARE (SQA)
+================================================================================
+> Estrategia de aseguramiento de calidad para GasControl System, basada en la
+  norma ISO/IEC 25010 y en un proceso de desarrollo ágil utilizando Scrum.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+  * Proyecto     : GasControl System
+  * Documento    : Plan de Calidad
+  * Metodología  : Scrum
+  * Norma        : ISO/IEC 25010
+  * Enfoque      : Shift Left Testing
+
+--------------------------------------------------------------------------------
+[2] OBJETIVOS DE CALIDAD
+--------------------------------------------------------------------------------
+  • OBJETIVO GENERAL:
+    Garantizar que el desarrollo de GasControl System cumpla con los estándares
+    de calidad definidos para el proyecto, reduciendo errores desde las primeras
+    etapas del desarrollo y asegurando que cada Sprint entregue funcionalidades
+    estables y verificadas.
+
+  • OBJETIVOS ESPECÍFICOS:
+    [-] Garantizar el correcto funcionamiento de cada módulo.
+    [-] Detectar errores en etapas tempranas del desarrollo.
+    [-] Mantener la seguridad de la información.
+    [-] Facilitar el mantenimiento del sistema.
+    [-] Cumplir los criterios de aceptación definidos para cada Sprint.
+    [-] Entregar incrementos funcionales al finalizar cada Sprint.
+
+--------------------------------------------------------------------------------
+[3] MODELO DE CALIDAD (ISO/IEC 25010)
+--------------------------------------------------------------------------------
+  (A) ADECUACIÓN FUNCIONAL
+      * Objetivo : Cubrir procesos de Clientes, Pedidos, Inventario,
+                   Distribución y Reportes.
+      * Métrica  : Sin registros inconsistentes en pruebas finales.
+
+  (B) EFICIENCIA DE DESEMPEÑO
+      * Objetivo : Tiempos de respuesta fluidos.
+      * Métrica  : Tiempo de respuesta inferior a 3 segundos en operaciones
+                   habituales.
+
+  (C) USABILIDAD
+      * Objetivo : Interfaz sencilla e intuitiva.
+      * Métrica  : Validación positiva en pruebas de usuarios.
+
+  (D) FIABILIDAD
+      * Objetivo : Operación continua en pruebas y demostraciones.
+      * Métrica  : Disponibilidad durante todas las pruebas planificadas.
+
+  (E) SEGURIDAD
+      * Mecanismos : Supabase Auth | Control por Roles | Credenciales |
+                     Row Level Security (RLS).
+
+  (F) COMPATIBILIDAD
+      * Navegadores : Google Chrome | Microsoft Edge.
+
+  (G) MANTENIBILIDAD
+      * Prácticas   : Componentes reutilizables, código modular y separación
+                      de responsabilidades.
+
+  (H) PORTABILIDAD
+      * Documentación adecuada de la base de datos y configuraciones para
+        facilitar futuras migraciones de infraestructura.
+
+--------------------------------------------------------------------------------
+[4] ESTRATEGIA SQA Y ACTIVIDADES
+--------------------------------------------------------------------------------
+  Aplicación del enfoque SHIFT LEFT TESTING (Detección temprana de errores).
+
+  • ASIGNACIÓN DE ACTIVIDADES:
+    * Revisión de requisitos : Scrum Master    | Planeación
+    * Revisión del diseño     : Backend         | Diseño
+    * Revisión de código     : Dev Team        | Desarrollo
+    * Pruebas funcionales    : QA              | Desarrollo
+    * Sprint Review          : Product Owner   | Validación
+    * Control de versiones   : Todo el equipo  | Continuo
+
+--------------------------------------------------------------------------------
+[5] POLÍTICAS E INDICADORES DE CALIDAD
+--------------------------------------------------------------------------------
+  • POLÍTICAS DE CALIDAD:
+    - Todo requisito implementado debe ser probado antes de su entrega.
+    - Cero (0) errores críticos aceptados al finalizar un Sprint.
+    - Registro obligatorio de cambios mediante Git/GitHub.
+    - Entregas funcionales al final de cada Sprint.
+    - Respaldos continuos de base de datos vía Supabase.
+
+  • INDICADORES METRICOS:
+    [+] Tiempo de Respuesta  : Menor a 3 segundos
+    [+] Errores Críticos     : 0
+    [+] Cobertura Funcional  : 100% de requisitos del Sprint verificados
+    [+] Disponibilidad       : Sistema operativo en demostraciones
+    [+] Validación Usuario   : Aprobación del Product Owner
+
+--------------------------------------------------------------------------------
+[6] GESTIÓN DE CALIDAD POR SPRINT (FLUJO)
+--------------------------------------------------------------------------------
+
+      [ Sprint Planning ]
+               │
+               ▼
+         [ Desarrollo ]
+               │
+               ▼
+     [ Revisión de Código ]
+               │
+               ▼
+    [ Pruebas Funcionales ]
+               │
+               ▼
+   [ Corrección de Errores ]
+               │
+               ▼
+       [ Sprint Review ]
+               │
+               ▼
+   [ Sprint Retrospective ]
+
+--------------------------------------------------------------------------------
+[7] RESPONSABILIDADES Y ROLES
+--------------------------------------------------------------------------------
+  • SCRUM MASTER
+    Supervisar el proceso, coordinar revisiones y gestionar impedimentos.
+
+  • DEVELOPMENT TEAM
+    Implementar código, revisar entre pares, corregir errores y asegurar la
+    calidad.
+
+  • PRODUCT OWNER
+    Validar incrementos, aprobar funcionalidades y verificar el cumplimiento
+    de requisitos.
+
+--------------------------------------------------------------------------------
+[8] CRITERIOS DE ACEPTACIÓN Y MEJORA CONTINUA
+--------------------------------------------------------------------------------
+  • CRITERIOS DE ACEPTACIÓN:
+    Una funcionalidad estará TERMINADA cuando:
+    1. Cumpla con el requisito funcional especificado.
+    2. Supere las pruebas definidas sin errores críticos.
+    3. Esté integrada correctamente al repositorio base.
+    4. Reciba la aprobación formal en el Sprint Review.
+
+  • MEJORA CONTINUA:
+    En cada Retrospectiva se analizarán errores, se identificarán cuellos de
+    botella y se definirán acciones correctivas inmediatas para el siguiente
+    Sprint.
+
+--------------------------------------------------------------------------------
+[9] HERRAMIENTAS Y RESULTADO ESPERADO
+--------------------------------------------------------------------------------
+  • HERRAMIENTAS: Git | GitHub | Supabase | PostgreSQL | React | Figma
+
+  • RESULTADO ESPERADO:
+    Desarrollar un sistema confiable, seguro y mantenible, asegurando que
+    cada Sprint entregue software funcional y alineado con los objetivos
+    de GasControl Perú S.A.C.
+
+================================================================================

@@ -1,0 +1,134 @@
+================================================================================
+                               PRODUCT VISION
+================================================================================
+> Visión del producto GasControl System, describiendo el propósito, los
+  usuarios objetivo, el valor de negocio y los objetivos que guían el
+  desarrollo del proyecto.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+  * Proyecto     : GasControl System
+  * Documento    : Product Vision
+  * Metodología  : Scrum
+  * Estado       : En desarrollo
+
+--------------------------------------------------------------------------------
+[2] VISIÓN DEL PRODUCTO
+--------------------------------------------------------------------------------
+  GasControl System es una aplicación web diseñada para optimizar la gestión
+  de pedidos, inventario y distribución de balones de gas de GasControl Perú
+  S.A.C.
+
+  El sistema busca reemplazar procesos manuales por una plataforma centralizada
+  que permita administrar la información de clientes, pedidos, inventario y
+  entregas de manera eficiente, segura y organizada.
+
+  La visión del proyecto es ofrecer una solución que facilite el trabajo diario
+  del personal administrativo y operativo, mejorando la calidad del servicio
+  brindado a los clientes y apoyando la toma de decisiones mediante información
+  confiable.
+
+--------------------------------------------------------------------------------
+[3] EL PROBLEMA Y LA SOLUCIÓN
+--------------------------------------------------------------------------------
+  • EL PROBLEMA:
+    Actualmente la organización realiza gran parte de sus procesos de forma
+    manual, generando dificultades operativas como:
+    [-] Registro manual de pedidos y duplicidad de información.
+    [-] Errores administrativos y dificultad para controlar el inventario.
+    [-] Retrasos en las entregas.
+    [-] Limitada generación de reportes.
+    [-] Baja disponibilidad de información para la toma de decisiones.
+
+  • LA SOLUCIÓN (GasControl System):
+    Plataforma web integrada desarrollada incrementalmente con Scrum para:
+    [+] Gestionar clientes y registrar pedidos.
+    [+] Controlar el inventario y administrar la distribución.
+    [+] Generar reportes administrativos.
+    [+] Proteger la información mediante autenticación y control de accesos.
+
+--------------------------------------------------------------------------------
+[4] USUARIOS OBJETIVO Y NECESIDADES
+--------------------------------------------------------------------------------
+  (A) ADMINISTRADOR (Gestiona toda la información del sistema)
+      - Controlar pedidos y administrar clientes.
+      - Gestionar inventario y supervisar repartidores.
+      - Obtener reportes.
+
+  (B) REPARTIDOR (Realiza las entregas de pedidos)
+      - Consultar pedidos asignados.
+      - Confirmar entregas.
+      - Actualizar el estado de los pedidos.
+
+  (C) CLIENTE (Solicita el servicio de distribución)
+      - Registrar pedidos.
+      - Consultar el estado de sus solicitudes.
+
+--------------------------------------------------------------------------------
+[5] OBJETIVOS Y PROPUESTA DE VALOR
+--------------------------------------------------------------------------------
+  • OBJETIVOS DEL PRODUCTO:
+    * Automatizar los procesos principales de la empresa.
+    * Reducir errores administrativos.
+    * Mejorar el control del inventario y optimizar la gestión de pedidos.
+    * Facilitar el seguimiento de las entregas.
+    * Generar información confiable para la toma de decisiones.
+
+  • PROPUESTA DE VALOR:
+    GasControl System permitirá a la organización centralizar la información,
+    reducir tiempos de atención, mejorar la organización de los procesos,
+    incrementar la confiabilidad de los datos, optimizar la distribución y
+    facilitar el crecimiento futuro del negocio.
+
+--------------------------------------------------------------------------------
+[6] ALCANCE Y BENEFICIOS ESPERADOS
+--------------------------------------------------------------------------------
+  • ALCANCE (Módulos):
+    Autenticación | Gestión de Clientes | Gestión de Pedidos | Inventario |
+    Distribución | Reportes
+
+  • BENEFICIOS ESPERADOS:
+    [ Empresa ]      : Mejor control, información centralizada, reducción de
+                       procesos manuales, mayor productividad.
+    [ Trabajadores ] : Interfaces sencillas, menor carga administrativa,
+                       acceso rápido y mejor organización del trabajo.
+    [ Clientes ]     : Atención rápida, seguimiento de pedidos y mayor
+                       confiabilidad en el servicio.
+
+--------------------------------------------------------------------------------
+[7] PRINCIPIOS Y ROADMAP GENERAL
+--------------------------------------------------------------------------------
+  • PRINCIPIOS DEL PRODUCTO:
+    Simplicidad | Seguridad | Facilidad de uso | Calidad del software |
+    Escalabilidad | Mantenibilidad
+
+  • ROADMAP GENERAL (Desarrollo Iterativo):
+    * Sprint 1 : Configuración inicial, autenticación y gestión de clientes.
+    * Sprint 2 : Gestión de pedidos.
+    * Sprint 3 : Gestión de inventario.
+    * Sprint 4 : Distribución de pedidos.
+    * Sprint 5 : Reportes y funcionalidades complementarias.
+    * Sprint 6 : Pruebas finales, corrección de errores y validación.
+
+--------------------------------------------------------------------------------
+[8] CRITERIOS DE ÉXITO Y RELACIÓN DOCUMENTAL
+--------------------------------------------------------------------------------
+  • CRITERIOS DE ÉXITO:
+    El producto será considerado exitoso cuando:
+    1. Automatice los procesos principales de la organización.
+    2. Permita administrar correctamente pedidos e inventario.
+    3. Reduzca errores ocasionados por procesos manuales.
+    4. Cumpla los requisitos funcionales establecidos en la ERS.
+    5. Supere las pruebas definidas en el Plan de Calidad.
+    6. Sea aprobado durante el Sprint Review final.
+
+  • RELACIÓN CON OTROS DOCUMENTOS:
+    * diagnostico.md     : Contexto y problemática de la organización.
+    * ers.md             : Requisitos funcionales y no funcionales.
+    * backlog.md         : Funcionalidades en Historias de Usuario.
+    * arquitectura.md    : Estructura técnica del sistema.
+    * plan-calidad.md    : Estrategia de aseguramiento de calidad (SQA).
+    * casos-prueba.md    : Verificación mediante pruebas funcionales.
+
+================================================================================
