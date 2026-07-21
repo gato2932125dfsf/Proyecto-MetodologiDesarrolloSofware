@@ -1,0 +1,90 @@
+================================================================================
+                SPRINT 06 — ESTABILIZACIÓN Y CIERRE
+================================================================================
+> Pruebas de aceptación del usuario, corrección de errores, capacitación al
+  personal y despliegue de la versión final (MVP).
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+  * Sprint       : 06 de 06
+  * Nombre       : Estabilización y cierre
+  * Duración     : 2 semanas
+  * Metodología  : Scrum
+  * Estado       : Planificado
+
+--------------------------------------------------------------------------------
+[2] OBJETIVO DEL SPRINT
+--------------------------------------------------------------------------------
+  Validar el sistema completo mediante Pruebas de Aceptación del Usuario
+  (UAT), corregir defectos detectados, capacitar al personal de GasControl
+  Perú S.A.C. y realizar el pase a producción del MVP (Release 1.0).
+
+--------------------------------------------------------------------------------
+[3] REQUISITOS FUNCIONALES CUBIERTOS
+--------------------------------------------------------------------------------
+  * RF-01 a RF-23  Verificación final de todos los requisitos funcionales
+                   mediante checklist manual (100% antes del cierre).
+  * RF-23  Exportación de reportes en PDF/Excel (cierre de esta
+           funcionalidad pendiente de sprints previos).
+
+--------------------------------------------------------------------------------
+[4] ACTIVIDADES PRINCIPALES
+--------------------------------------------------------------------------------
+  [+] Ejecución de Pruebas de Aceptación del Usuario (UAT) con el
+      Product Owner (DGOL) y usuarios de prueba.
+  [+] Corrección de bugs detectados durante el UAT.
+  [+] Capacitación al personal administrativo y a los repartidores en
+      el uso del sistema.
+  [+] Elaboración de manuales de usuario.
+  [+] Pase a producción (Release 1.0 / MVP).
+
+--------------------------------------------------------------------------------
+[5] EQUIPO Y RESPONSABILIDADES
+--------------------------------------------------------------------------------
+  * Salva Lulo, Moisés (QA / Control de versiones)
+    -> Responsable principal: ejecución del UAT, checklist final de
+       casos de prueba, verificación de criterios de aceptación.
+  * Rosales Crispín, Aristóteles Onassis (BD/Backend)
+    -> Corrección de defectos de backend/base de datos.
+  * Vilcapoma Ochoa, Michael Axel (Frontend)
+    -> Corrección de defectos de interfaz; soporte en capacitación.
+  * Huamán Quispe, Juan Lenin (Scrum Master)
+    -> Coordina la capacitación, la firma del Acta de Cierre de Proyecto
+       y la retrospectiva final del equipo.
+
+--------------------------------------------------------------------------------
+[6] RIESGOS ASOCIADOS
+--------------------------------------------------------------------------------
+  * Cierre de seguimiento de R-01, R-02, R-03 y R-04 (ver sprints 01, 02,
+    04 y 05): se documentan en este sprint las limitaciones finales del
+    sistema y del plan gratuito de Supabase (posibles pausas por
+    inactividad, cuotas de uso).
+
+--------------------------------------------------------------------------------
+[7] ASEGURAMIENTO DE CALIDAD (SQA)
+--------------------------------------------------------------------------------
+  * Validación del cliente (Sprint Review / UAT) por el Product Owner:
+    evalúa el incremento final y firma el Acta de Aprobación.
+  * Verificación de indicadores de calidad (ver docs/05-plan-calidad-
+    metricas.md): 0 errores críticos, 100% de RF verificados, tiempo de
+    respuesta < 3 s.
+  * Retroalimentación cualitativa de al menos 3 usuarios de prueba.
+
+--------------------------------------------------------------------------------
+[8] ENTREGABLE DE CIERRE
+--------------------------------------------------------------------------------
+  Release 1.0 (MVP) desplegado, manuales de usuario y Acta de Cierre de
+  Proyecto firmada.
+
+--------------------------------------------------------------------------------
+[9] ACTA DE APROBACIÓN DE INCREMENTO TÉCNICO / CIERRE DE PROYECTO
+--------------------------------------------------------------------------------
+  * Resumen del alcance cubierto      : [ Pendiente de completar ]
+  * Reporte de cobertura de pruebas   : [ Pendiente de completar ]
+  * Indicadores finales (SPI/CPI)     : [ Pendiente de completar ]
+  * Observaciones del Product Owner   : [ Pendiente de completar ]
+  * Firma del Product Owner (DGOL)    : [ Pendiente de firma ]
+  * Fecha de cierre                   : [ Pendiente ]
+
+================================================================================

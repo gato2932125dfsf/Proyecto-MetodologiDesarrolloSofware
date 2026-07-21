@@ -1,0 +1,90 @@
+================================================================================
+                SPRINT 03 — PANEL ADMINISTRATIVO (DGOL)
+================================================================================
+> Interfaz web central para la Dirección General de Operaciones y Logística:
+  aprobación de pedidos, programación de rutas y control de clientes.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+  * Sprint       : 03 de 06
+  * Nombre       : Panel administrativo (DGOL)
+  * Duración     : 2 semanas
+  * Metodología  : Scrum
+  * Estado       : Planificado
+
+--------------------------------------------------------------------------------
+[2] OBJETIVO DEL SPRINT
+--------------------------------------------------------------------------------
+  Construir la interfaz web central para el rol Administrador (DGOL), que
+  permita aprobar o rechazar solicitudes, programar rutas, bloquear horarios
+  y administrar la información de clientes.
+
+--------------------------------------------------------------------------------
+[3] REQUISITOS FUNCIONALES CUBIERTOS
+--------------------------------------------------------------------------------
+  * RF-01  Inicio de sesión mediante usuario y contraseña
+  * RF-02  Recuperación de contraseña vía correo electrónico
+  * RF-03  Validación de usuarios y bloqueo tras intentos fallidos
+  * RF-04  Control de acceso por roles (Administrador, Repartidor, Cliente)
+  * RF-08  Búsqueda de clientes por nombre, teléfono o dirección
+  * RF-10  Asignación de repartidor al pedido (manual o automática)
+  * RF-11  Actualización del estado del pedido (pendiente, en ruta,
+           entregado, cancelado)
+  * RF-16  Alertas de stock mínimo configurable (visualización en panel)
+
+--------------------------------------------------------------------------------
+[4] ACTIVIDADES PRINCIPALES
+--------------------------------------------------------------------------------
+  [+] Desarrollo de la interfaz web central para administradores.
+  [+] Bandeja de aprobación/rechazo de solicitudes de pedido.
+  [+] Programación de rutas de reparto.
+  [+] Bloqueo de horarios de despacho.
+  [+] Implementación del módulo de autenticación y control de roles
+      (Administrador, Repartidor, Cliente) sobre Supabase Auth.
+
+--------------------------------------------------------------------------------
+[5] EQUIPO Y RESPONSABILIDADES
+--------------------------------------------------------------------------------
+  * Vilcapoma Ochoa, Michael Axel (Frontend)
+    -> Responsable principal: interfaz del panel administrativo, diseño
+       responsive.
+  * Rosales Crispín, Aristóteles Onassis (BD/Backend)
+    -> Autenticación (Supabase Auth) y políticas RLS por rol.
+  * Salva Lulo, Moisés (QA / Control de versiones)
+    -> Verificación de criterios de aceptación antes de la Sprint Review.
+  * Huamán Quispe, Juan Lenin (Scrum Master)
+    -> Coordina con la DGOL la firma del Acta de Aprobación de este
+       incremento.
+
+--------------------------------------------------------------------------------
+[6] RIESGOS ASOCIADOS
+--------------------------------------------------------------------------------
+  * Ninguno crítico identificado específicamente para este sprint; se
+    mantiene el monitoreo continuo de R-03 y R-04 (ver Sprints 02 y 01).
+
+--------------------------------------------------------------------------------
+[7] ASEGURAMIENTO DE CALIDAD (SQA)
+--------------------------------------------------------------------------------
+  * Revisión de código mediante pull requests antes de integrar a la
+    rama principal.
+  * Checklist de casos de prueba por módulo (bandeja de aprobación,
+    control de roles).
+  * Validación del cliente (Sprint Review) por el Product Owner (DGOL).
+
+--------------------------------------------------------------------------------
+[8] ENTREGABLE DE CIERRE
+--------------------------------------------------------------------------------
+  Panel administrativo de control logístico, con Acta de Aprobación
+  firmada por el Product Owner.
+
+--------------------------------------------------------------------------------
+[9] ACTA DE APROBACIÓN DE INCREMENTO TÉCNICO
+--------------------------------------------------------------------------------
+  * Resumen del alcance cubierto      : [ Pendiente de completar ]
+  * Reporte de cobertura de pruebas   : [ Pendiente de completar ]
+  * Observaciones del Product Owner   : [ Pendiente de completar ]
+  * Firma del Product Owner (DGOL)    : [ Pendiente de firma ]
+  * Fecha de cierre                   : [ Pendiente ]
+
+================================================================================

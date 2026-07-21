@@ -1,0 +1,94 @@
+================================================================================
+             SPRINT 05 — MOTOR DE PENALIDADES Y DASHBOARD
+================================================================================
+> Automatización de penalidades por cancelaciones tardías y construcción del
+  dashboard gerencial de indicadores.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+  * Sprint       : 05 de 06
+  * Nombre       : Motor de penalidades y dashboard
+  * Duración     : 2 semanas
+  * Metodología  : Scrum
+  * Estado       : Planificado
+
+--------------------------------------------------------------------------------
+[2] OBJETIVO DEL SPRINT
+--------------------------------------------------------------------------------
+  Automatizar el bloqueo de clientes ante cancelaciones tardías o
+  inasistencias reiteradas, y construir el dashboard estadístico que
+  consolide los indicadores clave del negocio para la DGOL.
+
+--------------------------------------------------------------------------------
+[3] REQUISITOS FUNCIONALES CUBIERTOS
+--------------------------------------------------------------------------------
+  * RF-12  Cálculo y aplicación de penalidades por cancelaciones tardías,
+           parametrizables desde el panel
+  * RF-20  Reportes de ventas por periodo (diario/semanal/mensual)
+  * RF-21  Reportes de inventario (stock actual y movimientos)
+  * RF-22  Reportes de desempeño de repartidores
+
+--------------------------------------------------------------------------------
+[4] ACTIVIDADES PRINCIPALES
+--------------------------------------------------------------------------------
+  [+] Desarrollo de rutinas automatizadas (cron jobs) para bloqueos ante
+      cancelaciones tardías o inasistencias.
+  [+] Parametrización de las reglas de penalidad desde el panel
+      administrativo (sin requerir cambios de código, mitigación de R-03).
+  [+] Consultas SQL para el reporte gerencial (ventas, inventario,
+      desempeño de repartidores).
+  [+] Construcción del dashboard estadístico de KPIs.
+
+--------------------------------------------------------------------------------
+[5] EQUIPO Y RESPONSABILIDADES
+--------------------------------------------------------------------------------
+  * Rosales Crispín, Aristóteles Onassis (BD/Backend)
+    -> Responsable principal: cron jobs, consultas SQL, motor de
+       penalidades.
+  * Vilcapoma Ochoa, Michael Axel (Frontend)
+    -> Construcción visual del dashboard de KPIs.
+  * Salva Lulo, Moisés (QA / Control de versiones)
+    -> Pruebas funcionales del motor de penalidades; verificación de
+       reglas parametrizadas.
+  * Huamán Quispe, Juan Lenin (Scrum Master)
+    -> Monitorea el SPI/CPI del sprint junto al Development Team.
+
+--------------------------------------------------------------------------------
+[6] RIESGOS ASOCIADOS
+--------------------------------------------------------------------------------
+  * R-03  Ambigüedad en las reglas de negocio del motor de penalidades
+          (mitigado desde el Sprint 02 mediante tabla de parámetros
+          administrable).
+
+  * R-04  Subestimación del esfuerzo técnico en consultas SQL de alta
+          concurrencia (RNF-01).
+          Indicador de alerta: SPI < 0.80 al cierre de este sprint (punto
+          de control final, ver Sprint 01).
+
+--------------------------------------------------------------------------------
+[7] ASEGURAMIENTO DE CALIDAD (SQA)
+--------------------------------------------------------------------------------
+  * Revisión de código de las funciones de penalización antes de
+    integrarlas a la rama principal.
+  * Checklist de casos de prueba del motor de penalidades y del
+    dashboard.
+  * Verificación de límites del plan gratuito de Supabase (riesgo R-05
+    relacionado con cuotas de uso).
+
+--------------------------------------------------------------------------------
+[8] ENTREGABLE DE CIERRE
+--------------------------------------------------------------------------------
+  Motor lógico de penalidades y dashboard estadístico de KPIs, listos
+  para la etapa de estabilización final (Sprint 06).
+
+--------------------------------------------------------------------------------
+[9] ACTA DE APROBACIÓN DE INCREMENTO TÉCNICO
+--------------------------------------------------------------------------------
+  * Resumen del alcance cubierto      : [ Pendiente de completar ]
+  * Reporte de cobertura de pruebas   : [ Pendiente de completar ]
+  * Observaciones del Product Owner   : [ Pendiente de completar ]
+  * Firma del Product Owner (DGOL)    : [ Pendiente de firma ]
+  * Fecha de cierre                   : [ Pendiente ]
+
+================================================================================

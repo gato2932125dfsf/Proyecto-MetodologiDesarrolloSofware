@@ -1,0 +1,92 @@
+================================================================================
+                    SPRINT 01 — MODELADO DE DATOS
+================================================================================
+> Diseño y despliegue de la arquitectura base de datos del sistema, sobre la
+  cual se construirán los demás módulos de GasControl System.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+  * Sprint       : 01 de 06
+  * Nombre       : Modelado de datos
+  * Duración     : 2 semanas
+  * Metodología  : Scrum
+  * Estado       : Planificado
+
+--------------------------------------------------------------------------------
+[2] OBJETIVO DEL SPRINT
+--------------------------------------------------------------------------------
+  Diseñar y desplegar el modelo de datos relacional que soportará los módulos
+  de clientes, pedidos, inventario, distribución y reportes, dejando lista la
+  base técnica para el desarrollo funcional en los siguientes sprints.
+
+--------------------------------------------------------------------------------
+[3] REQUISITOS FUNCIONALES CUBIERTOS
+--------------------------------------------------------------------------------
+  * RF-14  Registro de entradas y salidas de balones de gas (estructura base)
+  * RF-15  Actualización automática del stock con cada movimiento (triggers)
+  * RF-16  Alertas de stock mínimo configurable (estructura base)
+  * RF-05  Registro de clientes (modelo de datos)
+
+--------------------------------------------------------------------------------
+[4] ACTIVIDADES PRINCIPALES
+--------------------------------------------------------------------------------
+  [+] Definición de la arquitectura base del sistema (stack: Supabase +
+      PostgreSQL + GitHub).
+  [+] Modelado lógico y físico de datos en entorno relacional cloud.
+  [+] Creación de índices para búsquedas de clientes y tipos de cilindro
+      (10 kg / 15 kg / 45 kg).
+  [+] Configuración inicial de autenticación (Supabase Auth) y políticas de
+      seguridad a nivel de fila (RLS).
+  [+] Desarrollo de funciones/triggers para automatizar el stock del
+      módulo de inventario.
+
+--------------------------------------------------------------------------------
+[5] EQUIPO Y RESPONSABILIDADES
+--------------------------------------------------------------------------------
+  * Rosales Crispín, Aristóteles Onassis (BD/Backend)
+    -> Responsable principal: diseño del modelo de datos, RLS, triggers.
+  * Huamán Quispe, Juan Lenin (Scrum Master)
+    -> Facilita ceremonias, remueve impedimentos (credenciales de Supabase).
+  * Salva Lulo, Moisés (QA / Control de versiones)
+    -> Verificación de criterios de aceptación, gestión de ramas en GitHub.
+  * Vilcapoma Ochoa, Michael Axel (Frontend)
+    -> Apoyo en la revisión del modelo de datos de cara al consumo desde el
+       frontend.
+
+--------------------------------------------------------------------------------
+[6] RIESGOS ASOCIADOS
+--------------------------------------------------------------------------------
+  * R-04  Subestimación del esfuerzo técnico en consultas SQL de alta
+          concurrencia (RNF-01).
+          Mitigación: monitorear el SPI al cierre del sprint; recurrir a
+          documentación oficial de Supabase e indexación básica si las
+          pruebas de estrés fallan; ajustar el alcance de RNF-01 si es
+          necesario.
+          Indicador de alerta: SPI < 0.80 al cierre de este sprint.
+
+--------------------------------------------------------------------------------
+[7] ASEGURAMIENTO DE CALIDAD (SQA)
+--------------------------------------------------------------------------------
+  * Revisión de diseño: evaluación de pares del modelo entidad-relación y
+    las políticas RLS antes de construir (Shift Left).
+  * Control de versiones: ramas por funcionalidad, historial de commits
+    en GitHub (transversal a todo el sprint).
+  * Checklist de criterios de aceptación por historia de usuario.
+
+--------------------------------------------------------------------------------
+[8] ENTREGABLE DE CIERRE
+--------------------------------------------------------------------------------
+  Base de datos relacional desplegada y script de migración, junto con el
+  Acta de Conformidad Técnica firmada por el Product Owner (DGOL).
+
+--------------------------------------------------------------------------------
+[9] ACTA DE APROBACIÓN DE INCREMENTO TÉCNICO
+--------------------------------------------------------------------------------
+  * Resumen del alcance cubierto      : [ Pendiente de completar ]
+  * Reporte de cobertura de pruebas   : [ Pendiente de completar ]
+  * Observaciones del Product Owner   : [ Pendiente de completar ]
+  * Firma del Product Owner (DGOL)    : [ Pendiente de firma ]
+  * Fecha de cierre                   : [ Pendiente ]
+
+================================================================================

@@ -1,0 +1,90 @@
+================================================================================
+                    SPRINT 02 — CORE DE PEDIDOS
+================================================================================
+> Desarrollo del módulo transaccional del portal del cliente: registro y
+  programación de pedidos de recarga de gas.
+
+--------------------------------------------------------------------------------
+[1] INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+  * Sprint       : 02 de 06
+  * Nombre       : Core de pedidos
+  * Duración     : 2 semanas
+  * Metodología  : Scrum
+  * Estado       : Planificado
+
+--------------------------------------------------------------------------------
+[2] OBJETIVO DEL SPRINT
+--------------------------------------------------------------------------------
+  Construir el módulo transaccional que permite al cliente registrar pedidos
+  de recarga, seleccionar el tipo de balón y programar la fecha de despacho,
+  dejando la base para la asignación y el seguimiento en sprints posteriores.
+
+--------------------------------------------------------------------------------
+[3] REQUISITOS FUNCIONALES CUBIERTOS
+--------------------------------------------------------------------------------
+  * RF-09  Registro de pedido (cliente, cantidad, tipo de balón 10/15/45 kg,
+           dirección, modalidad de pago)
+  * RF-13  Notificación al cliente sobre el estado de su pedido
+  * RF-06  Actualización y eliminación de datos de clientes
+  * RF-07  Historial de pedidos por cliente
+
+--------------------------------------------------------------------------------
+[4] ACTIVIDADES PRINCIPALES
+--------------------------------------------------------------------------------
+  [+] Desarrollo del módulo transaccional del portal del cliente.
+  [+] Registro de pedidos: cliente, cantidad y datos de entrega.
+  [+] Selección del tipo de recarga (10 kg, 15 kg, 45 kg).
+  [+] Programación de fechas de despacho.
+  [+] Integración del frontend con la API de Supabase (lectura/escritura
+      de pedidos).
+
+--------------------------------------------------------------------------------
+[5] EQUIPO Y RESPONSABILIDADES
+--------------------------------------------------------------------------------
+  * Vilcapoma Ochoa, Michael Axel (Frontend)
+    -> Responsable principal: interfaz de registro de pedidos, diseño
+       responsive, integración con la API.
+  * Rosales Crispín, Aristóteles Onassis (BD/Backend)
+    -> Endpoints y validaciones del modelo de pedidos sobre la base creada
+       en el Sprint 01.
+  * Salva Lulo, Moisés (QA / Control de versiones)
+    -> Pruebas funcionales del registro de pedidos; pull requests con al
+       menos 1 revisor.
+  * Huamán Quispe, Juan Lenin (Scrum Master)
+    -> Facilita ceremonias y coordina con la DGOL la validación temprana
+       de RF-10 y RF-12 (aún en refinamiento).
+
+--------------------------------------------------------------------------------
+[6] RIESGOS ASOCIADOS
+--------------------------------------------------------------------------------
+  * R-03  Ambigüedad en las reglas de negocio del motor de penalidades
+          (RF-12), cuya lógica se prepara en este sprint.
+          Mitigación: desacoplar las reglas del código mediante una tabla
+          de parámetros administrable desde el panel (sin cambios de
+          programación).
+
+--------------------------------------------------------------------------------
+[7] ASEGURAMIENTO DE CALIDAD (SQA)
+--------------------------------------------------------------------------------
+  * Revisión de requisitos junto al Product Owner antes de construir.
+  * Revisión de código mediante pull requests (mínimo 1 revisor).
+  * Ejecución de pruebas manuales guiadas por checklist de casos de
+    prueba del módulo de pedidos.
+
+--------------------------------------------------------------------------------
+[8] ENTREGABLE DE CIERRE
+--------------------------------------------------------------------------------
+  Módulo de registro y programación de recargas desplegado en entorno de
+  pruebas.
+
+--------------------------------------------------------------------------------
+[9] ACTA DE APROBACIÓN DE INCREMENTO TÉCNICO
+--------------------------------------------------------------------------------
+  * Resumen del alcance cubierto      : [ Pendiente de completar ]
+  * Reporte de cobertura de pruebas   : [ Pendiente de completar ]
+  * Observaciones del Product Owner   : [ Pendiente de completar ]
+  * Firma del Product Owner (DGOL)    : [ Pendiente de firma ]
+  * Fecha de cierre                   : [ Pendiente ]
+
+================================================================================
